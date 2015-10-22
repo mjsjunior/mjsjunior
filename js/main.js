@@ -1,4 +1,6 @@
+new WOW().init();
 $(document).ready(function() {
+
 
 
 var owl = $("#owl-demo");

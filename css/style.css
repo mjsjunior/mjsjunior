@@ -3091,8 +3091,7 @@ body {
   height: 100vh;
   top: 50%; }
   .hero-message .down-button {
-    text-align: center;
-    margin-top: 10%; }
+    text-align: center; }
   .hero-message .hero-text {
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
@@ -3222,7 +3221,6 @@ section {
       color: #727272; }
 
 footer {
-  background: green;
   height: 500px; }
 
 .mdl-layout__header {
