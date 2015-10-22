@@ -1,0 +1,92 @@
+.mdl-layout__header {
+	color:#727272;
+	background-color:#fff;
+	
+	.mdl-layout-title{
+		font-weight:800;
+		color:#000;
+		letter-spacing:1px;
+		font-size:28px;
+		&:first-letter{
+			color: $featured-color;
+		}
+	}
+	.mdl-layout__drawer-button {
+		color:#727272;
+	}
+
+	.mdl-layout__header-row {
+		.mdl-navigation__link {
+			font-size:14px;
+			color:$text-color;
+			transition: all 0.3s ease-in-out;
+			border-bottom: 3px solid transparent;
+			margin-bottom:3px;
+			&:hover{
+				border-bottom-color: $featured-color;
+			}
+		}
+	}
+}
+
+
+.mdl-button--fab{
+	&.mdl-button--colored {
+  		background: #fff ;
+ 		color: $featured-color;
+ 		&:hover{
+ 			background-color:$featured-color;
+ 			color:#fff;
+ 		}
+	}
+}
+
+.mdl-layout__header-row {
+	padding:0 25px
+}
+
+
+
+
+.mdl-button--accent{
+
+	&.mdl-button--accent {
+		&.mdl-button--raised{
+			background-color:$featured-color;
+			padding:0 15px;
+		}
+	}
+}
+
+
+
+/* Materialize */
+
+
+.card{
+	.card-title {
+		font-size:19px;
+	}
+	.card-reveal 
+		{
+		.card-title{
+			cursor: pointer;
+			display: block;
+			border-bottom: 1px solid #ddd;
+			padding-bottom: 12px;
+			margin-bottom: 12px;
+		}
+	
+	}
+
+	 .card-content{
+	 	min-height: 87px;
+	 	 .card-title {
+	 	 	line-height:18px;
+	 	 }
+	 }
+}
+
+
+
+
