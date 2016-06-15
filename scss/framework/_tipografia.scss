@@ -1,0 +1,49 @@
+html{
+	p{
+		font-size: 1.4rem;
+		line-height: 2.2rem;
+	}
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 400;
+	margin:2rem 0;
+}
+h1{
+	font-size: 4.0rem;
+	line-height: 4.4rem
+}
+h2{
+	font-size: 3rem;
+	line-height: 3.4rem;
+}
+h3{
+	font-size: 2.0rem;
+	line-height: 2.4rem;
+}
+h4{
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+}
+h5{
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+}
+
+
+
+h6{
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+}
+
+blockquote{
+	font-size: 2.0rem;
+	border-left: 0.5rem solid $main;
+	padding: 0.8rem 0 .8rem 1rem;
+	margin-left: 5%;
+	.person{
+		font-size: 1.4rem;
+		margin:1.0rem 0;
+		color:$secondary-text;
+	}
+}

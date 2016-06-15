@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+@import 'materialize/materialize';
+@import 'mixins';
+$font-text: 'Roboto', sans-serif;
+$featured-color: #1ABBAC;
+$text-color:#727272;
+
+body{
+	font-family: $font-text;
+	color:$text-color;
+}
+.navbar-fixed{
+	position:fixed;
+	top:0;
+	height:66px;
+	z-index:9999999;
+}
+.container-full-height{
+	height: 100vh 
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  height:100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.video-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  .videobg{
+  	  background:url('../images/bg-video.jpg');
+  	  background-size: cover;
+	  z-index: -101;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  .overlay{
+			background: rgba(0,0,0, .65);
+			min-height:600px;
+			width: 100%;
+		}
+  }
+}
+.hero-message {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	top:50%;
+	.down-button{
+		text-align:center;
+		
+	}
+	.hero-text{
+	  -webkit-transform:translateY(-100%);
+	          transform:translateY(-100%);
+	  position: relative;
+	  vertical-align: middle;
+	  width: 100%;
+	  text-align: center;
+	  text-transform: uppercase;
+	  letter-spacing: 0.025em;
+  h1, {
+	  color: #fff;
+	  font-size: 56px;
+	  font-weight: 700;
+	  line-height: 1.5;
+	}
+
+	h3{
+		font-size:26px;
+		font-weight:400;
+		color:#fff;
+		  line-height: 1.5;
+	}
+}
+}
+
+
+
+.featured-text{
+	color:$featured-color;
+}
+section{
+	padding:80px 0;
+	&.video-container{
+		padding:0;
+	}
+	&.sobre-mim{
+		.sobre-title{
+			font-weight:600;
+			text-transform:uppercase;
+			color:$featured-color;
+			margin: 0;
+			font-size:24px;
+		}
+
+		.destaque-foto{
+			text-align:center;
+			img{
+			padding: 5px;
+			width:100%;
+			height: auto;
+			max-height:360px;
+			max-width:360px;
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+			}
+		}
+
+		.informacoes{
+			padding-left:20px;
+			h5{
+				font-weight:400;
+				font-size:14px;
+				margin:0;
+				margin-bottom: 12px;
+  				padding-bottom: 12px;
+				border-bottom:1px solid #ccc;
+				span{
+					display:inline-block;
+					width:70px;
+				}
+			}
+			button{
+				margin-left:15px;
+			}
+		}
+
+	}
+
+
+	&.skill{
+		padding:0;
+		background: url('../images/bg-skill.jpg') center center;
+		background-size:cover;
+		min-height:600px;
+		
+		width:100%;
+		.overlay{
+			background: rgba(255,255,255, .85);
+			min-height:600px;
+			width: 100%;
+		}
+
+		.apresentacaoSkill{
+			margin-top:200px;
+		
+			h2{
+				@include create-title-section(#333);
+			}
+
+			p{
+				font-size:16px;
+				line-height:30px;
+			}
+		}
+		.groupBar{
+			padding-bottom: 30px;
+			margin-top:100px;
+			height: 400px;
+			-webkit-transform: rotateX(180deg);
+			        transform: rotateX(180deg);
+			
+			.item{
+				height:450px;
+			}
+
+		}
+
+		.bar{
+			-webkit-transform:rotateX(180deg);
+			        transform:rotateX(180deg);
+			background:$featured-color;
+			margin-left:25px;
+			border-radius:2px;
+			width:60px;
+			transition: height 0.9s ease-in-out;
+			height:10px;
+			display:inline-block;
+				
+				&:hover{
+					box-shadow:2px 2px 2px #ccc;
+				}
+				
+				.name{
+					position: relative;
+					  top: -75px;
+					  text-align: center;
+
+				}
+
+				.linha{
+                  height: 100px;
+				  width: 2px;
+				  background-color: rgb(26, 187, 172);
+				  position: relative;
+				  top: -70px;
+				  left: 50%;
+					&:before{
+						content: ' ';
+						width:50px;
+						 background-color: rgb(26, 187, 172);
+						height:50px;
+						border-radius:50%;
+					}
+				}
+			}
+
+			.navigation-skill{
+				padding-top:300px;
+				text-align:center;
+				button{
+					margin-bottom:20px;
+				}
+			}
+		}
+
+
+		&.educacao{
+			min-height:600px;
+			background: $featured-color;
+			h2{
+				@include create-title-section(#fff);
+			}
+
+			p{
+				color:#fff;
+				font-size:16px;
+			}
+			
+			.card
+			{
+				p{
+					color:$text-color;
+				}
+			}
+		}
+}
+
+
+
+footer{
+	height:500px;
+}
+
+@import 'newmdl';
+@import 'responsive';
+/*header*/
+

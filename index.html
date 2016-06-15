@@ -1,273 +1,151 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/mdl/material-design-lite-grid.css">
+	<title>MJúnior - Desenvolvimento de Sites | Barbacena - MG </title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css"> -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="css/owl/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl/owl.theme.css">
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Maurício Jr - Web Developer</title>
 </head>
 <body>
-	
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header navbar-fixed">
-	  <header class="mdl-layout__header">
-	  <div class="container">
-	    <div class="mdl-layout__header-row">
-	      <!-- Title -->
-	      <span class="mdl-layout-title fadeIn animated">MJUNIOR</span>
-	      <!-- Add spacer, to align navigation to the right -->
-	      <div class="mdl-layout-spacer"></div>
-	      <!-- Navigation. We hide it in small screens. -->
-	      <nav class="mdl-navigation mdl-layout--large-screen-only">
-	        <a class="mdl-navigation__link" href="" scroll="yes" to="#me">SOBRE MIM</a>
-	        <a class="mdl-navigation__link" href="" scroll="yes" to="#skills">HABILIDADES</a>
-	        <a class="mdl-navigation__link" href="" scroll="yes" to="#educacao">EDUCAÇÃO</a>
-	         <a class="mdl-navigation__link" href="" scroll="yes" to="#trabalhos">trabalhos</a>
-	        <a class="mdl-navigation__link" href="" scroll="yes" to="#contato">CONTATO</a>
-	      </nav>
-	    </div>
-	    </div>
-	  </header>
-	  </div>
-		<div class="video-container">
-			<div class="container-full-height container">
-				<div class="video-wrap">
-					<div class="videobg">
-						<div class="overlay"></div>
-					</div>
-				</div>
-
-				<div class="hero-message fadeIn animated" >
-					<div class="hero-text ">
-						<h1>Olá! Sou <span class="featured-text">Maurício Júnior</span></h1>
-						<h3>Web Developer, Barbacena - MG</h3>
-					</div>
-
-					<div class="down-button">
-						<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored fadeInRightBig animated wow" data-wow-duration="2s" id="down">
-						  <i class="material-icons">keyboard_arrow_down</i>
-						</button>
-					</div>
-				</div>
-			</div>	
+	<header id="header">
+		<div class="container">
+			<nav id="nav">
+				<h1 class="logo">MJUNIOR</h1>
+				<ul class="sociallist">
+					<li class="socialitem">
+						<a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+					</li>
+					<li class="socialitem">
+						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</li>
+					<li class="socialitem">
+						<a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</nav>
 		</div>
+		<div class="overlay-dot"></div>
+		<div class="overlay-gradiente"></div>
+		<div class="divider">
+			<div class="left">
+			</div>
+			<div class="right"></div>
+		</div>
+	</header>
 
-	  <main>
-	    	<div class="container">
-			<section class="row sobre-mim" id="me">
-				  <div class="col s12 l4 m6">
-						<div class="historia" >
-							
-								<h2 class="sobre-title" >Minha História</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam culpa magnam totam minus illum placeat quod obcaecati unde iure fugiat. Incidunt eius ullam doloribus molestiae, iusto distinctio non quaerat dicta iste ab ex id minus, nihil quia dolorum labore eligendi et quo commodi magnam quos eum atque maiores in. Ratione.</p>
-						
-								<div class="download-cv">
-								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-								  <i class="material-icons">file_download</i> Download Cv
-								</button>
+	<section>
+		<div class="container">
+			<div id="about">
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div class="row itens-sm-center">
+							<div class="col-sm-12">
+								<h1 class="title">Meu Perfil</h1>
+								<div class="separador"></div>
+							</div>
+							<div class="col-sm-4 col-md-2">
+								<div class="me _unpadding">
+									<img class="avatar" src="images/me.jpg" alt="">
 								</div>
-							
-						</div>
-				  </div>
-				  <div class="col s12 l4 m6">
-				  	<div class="destaque-foto wow fadeIn" data-wow-delay=".3s">
-						<img class="" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xtf1/v/t1.0-9/10416592_1381985368757238_8033912856476545012_n.jpg?oh=79a7cf78b52acc972f8948b27c47dfc6&oe=5692B21B&__gda__=1456056243_a90024ec8a87bd1f85f06f4322b82621" alt="">
-				 	</div> 
-				  </div>
+							</div>
+							<div class="col-sm-8 col-md-8">
 
-				  <div class="col s12 l4 m12">
-						<div class="informacoes">
-							<h2 class="sobre-title">Informações pessoais</h2>
-							<div class="">
-									<h5><span>Nome:</span> Maurício José da Silva Júnior</h5>
-									<h5><span>Idade:</span> 20 Anos</h5>
-									<h5><span>Telefone:</span> 32 98704-0370</h5>
-									<h5><span>Email:</span> mauriciojs.junior@gmail.com</h5>
-									<h5><span>Cidade:</span> Barbacena, Minas-Gerais</h5>
-									<div>
-									<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-										 <i class="fa fa-facebook"></i>
-									</button>
-									<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-										 <i class="fa fa-linkedin"></i>
-									</button>
-									<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-										 <i class="fa fa-instagram"></i>
-									</button>
-									<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-										 <i class="fa fa-envelope"></i>
-									</button></div>
+								<div class="me">
+									<h3 class="fullname">Maurício Silva Júnior</h3>
+									<small class="role">Programmer / Web Developer</small>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="profile">
+									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore duis aute irure dolor in reprehende in voluptate velit esse.</p>
+									<h5><span><i class="fa fa-calendar"></i>Nascimento: </span>25 Janeiro 1995 em Barbacena - MG</h5>
+									<h5><span><i class="fa fa-phone"></i>Telefone: </span>+55 32 98704-0370</h5>
+									<h5><span><i class="fa fa-link"></i>Linkedin: </span>https://br.linkedin.com/in/mjsjunior</h5>
+									<h5><span><i class="fa fa-envelope"></i>E-mail: </span>mauricio@mjunior.com.br</h5>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="row">
+							<div class="col-sm-12">
+								<h1 class="title">Minhas Habilidades</h1>
+								<div class="separador"></div>
+							</div>
+								
+							<div class="skills">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem cupiditate molestiae dolores cum, optio sequi provident tempore dignissimos perferendis vitae doloribus error consectetur doloremque quaerat corporis culpa ipsam, expedita. In.</p>
+								<div class="skill">
+									<div class="name">
+										PHP 75%
+									</div>
+									<div class="bar">
+										<span data-total="75%"></span>
+									</div>
+								</div>
+
+								<div class="skill">
+									<div class="name">
+										PHP 75%
+									</div>
+									<div class="bar">
+										<span data-total="5%"></span>
+									</div>
+								</div>
+
+								<div class="skill">
+									<div class="name">
+										PHP 75%
+									</div>
+									<div class="bar">
+										<span data-total="25%"></span>
+									</div>
+								</div>
+
+								<div class="skill">
+									<div class="name">
+										PHP 75%
+									</div>
+									<div class="bar">
+										<span data-total="35%"></span>
+									</div>
+								</div>
+
+								<div class="skill">
+									<div class="name">
+										PHP 75%
+									</div>
+									<div class="bar">
+										<span data-total="45%"></span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-			</section>
-	    </div>
-	    <section class="skill" id="skills">
-	    	<div class="overlay">
-		    	<div class="container">
-			    	<div class="row" >
-			    		<div class="col s12 m3">
-			    			<div class="apresentacaoSkill">
-			    				<h2>HABILIDADES</h2>
-			    				<p>Sou competente por não aceitar trabalhos que, nas condições que me são apresentados, é evidente que não entregarei no prazo, ou não cumprirei o orçamento, ou não farei com qualidade.</p>
-			    			</div>
-			    		</div>
-			    		<div class="col s12 m5 offset-m2">
-							 <div id="owl-demo"  class="groupBar">
-								<div class="item">	
-									<div class="bar" data-height="80" data-name="CSS">
-						  				<div class="name">CSS <br> <strong>80%</strong></div>
-						  				<div class="linha"></div>
-							 		</div>
-							 	</div>
-								<div class="item">	
-								 	<div class="bar" data-height="80" data-name="HTML">
-										<div class="name">HTML <br> <strong>80%</strong></div>
-										<div class="linha"></div>
-  	 								</div>
-  	 							</div>
-								 <div class="item">
-								 	<div class="bar" data-height="50" data-name="JavaScript">
-  										<div class="name">JavaScript <br> <strong>50%</strong></div>
-  										<div class="linha"></div>
-		 							</div>
-		 						</div>
-								<div class="item">
-								 	<div class="bar" data-height="50" data-name="Wordpress">
-										<div class="name">Wordpress <br> <strong>50%</strong></div>
-  										<div class="linha"></div>
-		 							</div>
-		 						</div>
-		 						<div class="item">
-								 	<div class="bar" data-height="60" data-name="PHP">
-										<div class="name">PHP <br> <strong>60%</strong></div>
-  										<div class="linha"></div>
-		 							</div>
-		 						</div>
-		 						<div class="item">
-								 	<div class="bar" data-height="35" data-name="Grails">
-										<div class="name">Grails <br> <strong>35%</strong></div>
-  										<div class="linha"></div>
-		 							</div>
-		 						</div> 
-							</div> 
-			    		</div>
-			    		<div class="col s12 m2">
-			    			<div class="navigation-skill">
-			    				<div class="row">
-			    				<div class="col s6 m12">
-					    			<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" id="prevskill">
-									  <i class="material-icons">keyboard_arrow_left</i>
-									</button>
-								</div>
-								<div class="col s6 m12">
-									<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" id="nextskill">
-									  <i class="material-icons">keyboard_arrow_right</i>
-									</button>
-								</div>
-								</div>
-				    		</div>
-				    	</div>
-				    </div>
 				</div>
 			</div>
-		</section>
-		<section class="educacao wow fadeIn">
-			<div class="container">
-				<div class="row">
-					<div class="col s12 m12">
-					<h2>EDUCAÇÃO</h2>
-					<p>Educação é o que resta depois de ter esquecido tudo que se aprendeu na escola.</p>
-					</div>
-						<div class="col s12 m4">
-							<div class="card wow fadeInUp animated" data-wow-delay=".2s">
-							    <div class="card-image waves-effect waves-block waves-light">
-							    <h5 class="center-align card-title-top">2013 - 2017</h5>
-							      <img class="activator" src="http://www.bdinfosys.com/demo/materialx/images/grad-cap.png">
-							    </div>
-							    <div class="card-content">
-							      <span class="card-title activator grey-text text-darken-4">Sistemas para Internet<i class="material-icons right">more_vert</i></span>
-							      
-							    </div>
-							    <div class="card-reveal">
-							      <span class="card-title grey-text text-darken-4">Ensino Superior<i class="material-icons right">close</i></span>
-							      <p>Graduando do curso Superior Tecnologia em Sistemas para Internet pelo Instituto Federal do Sustesde de MG - Campus Barbacena.</p>
-							    </div>
-						  	</div>
-						</div>
-
-
-						<div class="col s12 m4">
-							<div class="card wow fadeInUp animated" data-wow-delay=".4s">
-							    <div class="card-image waves-effect waves-block waves-light">
-							    <h5 class="center-align card-title-top">2012 - 2013</h5>
-							      <img class="activator" src="http://www.bdinfosys.com/demo/materialx/images/grad-cap.png">
-							    </div>
-							    <div class="card-content">
-							      <span class="card-title activator grey-text text-darken-4">Técnico em Informática<i class="material-icons right">more_vert</i></span>
-							      
-							    </div>
-							    <div class="card-reveal">
-							      <span class="card-title grey-text text-darken-4">Formação técnica <i class="material-icons right">close</i></span>
-							      <p>Técnico em Informática formado pelo Centro Educacional Aprendiz</p>
-							    </div>
-						  	</div>
-						</div>
-
-
-						<div class="col s12 m4">
-							<div class="card wow fadeInUp animated" data-wow-delay=".5s">
-							    <div class="card-image waves-effect waves-block waves-light">
-							    <h5 class="center-align card-title-top">2009 - 2012</h5>
-							      <img class="activator" src="http://www.bdinfosys.com/demo/materialx/images/grad-cap.png">
-							    </div>
-							    <div class="card-content">
-							      <span class="card-title activator grey-text text-darken-4">Ensino Médio<i class="material-icons right">more_vert</i></span>
-							      
-							    </div>
-							    <div class="card-reveal">
-							      <span class="card-title grey-text text-darken-4">Ensino Médio<i class="material-icons right">close</i></span>
-							      <p>Centro Educacional Aprendiz</p>
-							    </div>
-						  	</div>
-						</div>
-
-				</div>
+		</div>
+	</section>
+	<section id="contact-bar">
+		<div class="container">
+		<div class="row x-sm-center">
+			<div class="col-sm-12 col-md-8">
+				<h1 class="callaction">
+					Estou preparado para o seu projeto, <strong>Contate-me ?</strong>
+				</h1>
 			</div>
-		</section>
+			<div class="col-sm-12 col-md-4">
+				<a href="#" class="btn">Contato</a>
+				<a href="#" class="btn">Download CV</a>
+			</div>
+		</div>
+		</div>
+	</section>
+	
 
-
-	  </main>
-
-
-
-
-
-
-
-		
-
-		 
-
-		 
-
-		
-
-
-<footer></footer>
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.videoBG.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/main.js"></script>
+	<footer></footer>
+	<script src="js/main.js"></script>
 </body>
 </html>
