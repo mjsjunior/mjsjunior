@@ -534,7 +534,7 @@ body {
       margin-top: 20px; }
 
 #about {
-  padding: 120px 0 60px 0;
+  padding: 40px 0 60px 0;
   opacity: 0; }
   #about .title {
     color: #777;
@@ -636,30 +636,56 @@ body {
   #contact-bar .group-button {
     text-align: center; }
 
-.divider {
-  height: 65px;
+.divider, .divider-dois {
+  height: 100px;
   padding-top: 25px;
   overflow: hidden;
   width: 100%;
   position: absolute;
   bottom: 0; }
-  .divider > .left {
+  .divider > .left, .divider-dois > .left {
     position: absolute;
     top: 0px;
     left: -1%;
-    width: 53%;
+    width: 55%;
     height: 100%;
-    transform: rotate(5deg);
+    transform: rotate(7deg);
     transform-origin: 0px 100% 0px;
     background: #fff; }
-  .divider > .right {
-    transform: rotate(-5deg);
+  .divider > .right, .divider-dois > .right {
+    transform: rotate(-7deg);
     position: absolute;
     top: 0px;
     right: -1%;
-    width: 53%;
+    width: 55%;
     height: 100%;
     transform-origin: 100% 100% 0px;
+    background: #fff; }
+
+.divider-dois {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  top: -125px;
+  height: 140px; }
+  .divider-dois > .left {
+    position: absolute;
+    top: 0px;
+    left: -3%;
+    width: 54%;
+    height: 100%;
+    overflow-x: hidden;
+    transform: rotate(7deg);
+    transform-origin: 100% 25% 0px;
+    background: #fff; }
+  .divider-dois > .right {
+    transform: rotate(-7deg);
+    position: absolute;
+    top: 0px;
+    right: -3%;
+    width: 54%;
+    height: 100%;
+    transform-origin: 0% 33% 0px;
     background: #fff; }
 
 #jobs {
@@ -784,7 +810,12 @@ object {
     font-size: 62px;
     font-weight: 500; }
   #header #nav {
-    display: none; } }
+    display: none; }
+
+  .divider > .left, .divider-dois > .left {
+    left: 0px; }
+  .divider > .right, .divider-dois > .right {
+    right: 0%; } }
 @media (max-width: 400px) {
   #header > .caption h1 {
     font-size: 42px;

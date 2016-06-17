@@ -87,7 +87,7 @@ $color: #1ABC9C;
 }
 
 #about{
-	padding:120px 0 60px 0;
+	padding:40px 0 60px 0;
 	opacity:0;
 	.title{
 	    color: #777;
@@ -225,7 +225,7 @@ $color: #1ABC9C;
 	
 }
 .divider{
-    height: 65px;
+    height: 100px;
     padding-top: 25px;
     overflow: hidden;
     width: 100%;
@@ -235,21 +235,51 @@ $color: #1ABC9C;
 		    position: absolute;
 		    top: 0px;
 		    left: -1%;
-		    width: 53%;
+		    width: 55%;
 		    height: 100%;
-		    transform:rotate(5deg);
+		    transform:rotate(7deg);
 	        transform-origin: 0px 100% 0px;
 	        background:#fff;
 	}
 	>.right{
-		transform:rotate(-5deg);
+		transform:rotate(-7deg);
 	    position: absolute;
 	    top: 0px;
 	    right: -1%;
-	    width: 53%;
+	    width: 55%;
 	    height: 100%;
 		transform-origin: 100% 100% 0px;
 		background:#fff;
+	}
+}
+
+.divider-dois{
+	@extend .divider;
+	position:relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    top:-125px;
+    height:140px;
+	>.left{
+    position: absolute;
+    top: 0px;
+    left: -3%;
+    width: 54%;
+    height: 100%;
+    overflow-x: hidden;
+    transform: rotate(7deg);
+    transform-origin: 100% 25% 0px;
+    background: #fff;
+	}
+	>.right{
+	transform: rotate(-7deg);
+    position: absolute;
+    top: 0px;
+    right: -3%;
+    width: 54%;
+    height: 100%;
+    transform-origin: 0% 33% 0px;
+    background: #fff;
 	}
 }
 #jobs{
@@ -419,6 +449,14 @@ object{
 
 		#nav{
 			display:none;
+		}
+	}
+	.divider{
+		>.left{
+		    left: 0px;
+		}
+		>.right{
+		    right: 0%;
 		}
 	}
 }
