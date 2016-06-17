@@ -15,16 +15,39 @@ if(window.location.hash) {
 }
 
 window.onscroll = function (e) {  
-	var el = skills = document.querySelector(".skills");
-	if(elementInViewport(el)){
-		var skills = document.querySelectorAll(".skill .bar span");
-		for(i=0;i<skills.length;i++){
-			var size = skills[i].getAttribute("data-total");
-			skills[i].style.width = size;
+	var about = document.querySelector("#about");
+	var scroll = window.pageYOffset;
+	//verifica se about esta na tela
+	if(about.offsetTop - scroll - 400 < 0 ){
+		if(about.className.indexOf('fadeInUp') == -1){
+			about.className += ' fadeInUp';
+			setTimeout(function(){
+				about.style.opacity =1;
+				var el = skills = document.querySelector(".skills");
+				if(elementInViewport(el)){
+					var skills = document.querySelectorAll(".skill .bar span");
+					for(i=0;i<skills.length;i++){
+						var size = skills[i].getAttribute("data-total");
+						skills[i].style.width = size;
+					}
+				}
+			},900)
 		}
 	}
-	console.log('email');
 }
+
+
+var moreSkill = document.querySelector('#more-skill');
+
+moreSkill.addEventListener('click',function(e){
+	console.log('Clicado!');
+	var arr = document.querySelectorAll('.hide');
+	for(i=0;i<arr.length;i++){
+		arr[i].style.display = 'block';
+	}
+	moreSkill.style.display = 'none';
+})
+
 
 //Diz se elemento está visivel
 function elementInViewport(el) {
@@ -38,10 +61,7 @@ function elementInViewport(el) {
     top += el.offsetTop;
     left += el.offsetLeft;
   }
-  return (
-    top >= window.pageYOffset &&
-    left >= window.pageXOffset &&
-    (top + height) <= (window.pageYOffset + window.innerHeight) &&
-    (left + width) <= (window.pageXOffset + window.innerWidth)
+  return (top >= window.pageYOffset &&
+    left >= window.pageXOffset
   );
 }

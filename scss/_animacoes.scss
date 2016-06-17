@@ -1,0 +1,23 @@
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		margin-top:50px;
+	}
+
+	100% {
+		opacity: 1;
+		margin-top:0;
+	}
+}
