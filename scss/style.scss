@@ -225,7 +225,7 @@ $color: #1ABC9C;
 	
 }
 .divider{
-    height: 50px;
+    height: 65px;
     padding-top: 25px;
     overflow: hidden;
     width: 100%;
@@ -237,12 +237,12 @@ $color: #1ABC9C;
 		    left: -1%;
 		    width: 53%;
 		    height: 100%;
-		    transform:rotate(3deg);
+		    transform:rotate(5deg);
 	        transform-origin: 0px 100% 0px;
 	        background:#fff;
 	}
 	>.right{
-		transform:rotate(-3deg);
+		transform:rotate(-5deg);
 	    position: absolute;
 	    top: 0px;
 	    right: -1%;
@@ -406,6 +406,37 @@ footer{
 }
 object{
 	display:none;
+}
+
+@media (max-width: 600px){
+	#header{
+		>.caption{
+			h1{
+				font-size:62px;
+				font-weight:500;
+			}
+		}
+
+		#nav{
+			display:none;
+		}
+	}
+}
+
+
+@media (max-width: 400px){
+	#header{
+		>.caption{
+			h1{
+				font-size:42px;
+				font-weight:500;
+			}
+
+			h2{
+				font-size:20px;
+			}
+		}
+	}
 }
 
 @import 'animacoes'
