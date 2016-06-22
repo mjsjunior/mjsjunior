@@ -475,7 +475,7 @@ body {
 
 #header {
   width: 100%;
-  height: 100vh;
+  height: 115vh;
   background: #000;
   overflow: hidden;
   position: relative; }
@@ -655,7 +655,7 @@ body {
     width: 55%;
     height: 100%;
     transform: rotate(7deg);
-    transform-origin: 0px 100% 0px;
+    transform-origin: 0px 0% 0px;
     background: #fff; }
   .divider > .right, .divider-dois > .right {
     transform: rotate(-7deg);
@@ -664,7 +664,7 @@ body {
     right: -1%;
     width: 55%;
     height: 100%;
-    transform-origin: 100% 100% 0px;
+    transform-origin: 100% 0% 0px;
     background: #fff; }
 
 .divider-dois {
@@ -681,7 +681,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     transform: rotate(7deg);
-    transform-origin: 100% 25% 0px;
+    transform-origin: 100% 45% 0px;
     background: #fff; }
   .divider-dois > .right {
     transform: rotate(-7deg);
@@ -690,7 +690,7 @@ body {
     right: -3%;
     width: 54%;
     height: 100%;
-    transform-origin: 0% 33% 0px;
+    transform-origin: 0% 44% 0px;
     background: #fff; }
 
 #jobs {
@@ -875,9 +875,15 @@ object {
     display: none; }
 
   .divider > .left, .divider-dois > .left {
-    left: 0px; }
+    left: 0px;
+    width: 53%; }
   .divider > .right, .divider-dois > .right {
     right: 0%; } }
+@media (min-width: 600px) and (max-width: 800px) {
+  .divider-dois > .left {
+    transform-origin: 100% 60% 0px; }
+  .divider-dois > .right {
+    transform-origin: 0% 60% 0px; } }
 @media (max-width: 400px) {
   #header > .caption h1 {
     font-size: 42px;
