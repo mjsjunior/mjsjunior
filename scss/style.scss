@@ -369,6 +369,9 @@ div[id^="modal"]{
 	    z-index: 999;
 	    border-radius: 50%;
 	    padding: 10px 15px;
+	    &:hover{
+	    	cursor:pointer;
+	    }
 	}
 
 	.content-modal{
@@ -382,6 +385,7 @@ div[id^="modal"]{
 		width:90%;
 		max-height:90vh;
 		overflow:hidden;
+
 		p{
 			line-height:24px;
 			margin-bottom:20px;
@@ -425,6 +429,13 @@ div[id^="modal"]{
 			max-height:calc(78vh);
 			overflow:auto;
 			margin-top:5px;
+			a{
+				color:#000;
+				text-decoration:none;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
 		}
 	}
 }
