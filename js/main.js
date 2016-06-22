@@ -41,17 +41,14 @@ function abrirModal(modal){
 	document.querySelector('#'+modal).style.display="block";
 	setTimeout(function(){
 		document.querySelector('#'+modal).style.opacity=1;
-		document.querySelector('#'+modal).style.transform="scale(1)";
 	},100)
 }
 
 function closeModal(){
 	var modal = document.querySelectorAll('div[id^="modal"');
 	for(i in modal){
-		modal[i].style.transform="scale(0)";
-		setTimeout(function(){
-			modal[i].style.display="none";
-		},500);
+		modal[i].style.opacity=0;
+		modal[i].style.display="none";
 	}
 }
 

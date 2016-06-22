@@ -743,16 +743,18 @@ div[id^="modal"] {
   height: 100vh;
   z-index: 9;
   display: none;
-  transform: scale(0);
   opacity: 0;
   transition: all .4s; }
   div[id^="modal"] .close {
     position: absolute;
-    top: 8%;
-    right: 7%;
+    top: 3%;
+    right: 2%;
     color: #fff;
     font-size: 28px;
-    z-index: 99999; }
+    background: #FF2929;
+    z-index: 999;
+    border-radius: 50%;
+    padding: 10px 15px; }
   div[id^="modal"] .content-modal {
     padding: 10px;
     background: #fff;
@@ -767,6 +769,13 @@ div[id^="modal"] {
     div[id^="modal"] .content-modal p {
       line-height: 24px;
       margin-bottom: 20px; }
+    div[id^="modal"] .content-modal h3 {
+      text-align: center;
+      padding: 20px 0 10px 0;
+      font-size: 13px;
+      font-weight: 600;
+      /* letter-spacing: 1px; */
+      text-transform: uppercase; }
     div[id^="modal"] .content-modal .title {
       font-weight: 500;
       margin: -15px -20px;
@@ -878,7 +887,14 @@ object {
     left: 0px;
     width: 53%; }
   .divider > .right, .divider-dois > .right {
-    right: 0%; } }
+    right: 0%; }
+
+  div[id^="modal"] .content-modal {
+    overflow: scroll; }
+    div[id^="modal"] .content-modal .images {
+      overflow-y: visible; }
+    div[id^="modal"] .content-modal .description {
+      overflow: visible; } }
 @media (min-width: 600px) and (max-width: 800px) {
   .divider-dois > .left {
     transform-origin: 100% 60% 0px; }
